@@ -97,4 +97,9 @@ window.onload = function() {
         });
     });
 
+    document.getElementById("clear-history-btn").addEventListener("click", function() {
+        callHistoryData.length = 0;
+        updateHistoryUI();
+    });
+
 }
